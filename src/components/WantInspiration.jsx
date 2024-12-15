@@ -1,8 +1,5 @@
 import React from 'react'
 import Card from './Card'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const wantinspiration = [
     {
@@ -26,9 +23,9 @@ function WantInspiration() {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow:3,
+        slidesToShow:1,
         autoplay:true,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
           {
@@ -62,15 +59,13 @@ function WantInspiration() {
   return (
     <div className='w-[110%] -mx-4 lg:-mx-20 md:w-[110%] bg-[#f2ebdf] me-2 -mx-20 p-2 mb-5 '>
         <div className='w-[90%] mx-auto p-1'>
-            <h2 className='text-2xl font-bold mt-9 mb-5'>Want inspiration? Visit The Style Room for styling tips and fashion trends.</h2>
-            <div>
-                <Slider {...settings}>
-                    {
-                        wantinspiration.map((item)=>{
-                            return <Card link={item.link} img={item.imgLink}/>
-                        })
-                    }
-                </Slider>
+            <h2 className='text-2xl font-bold mt-9 mb-3'>Want inspiration? Visit The Style Room for styling tips and fashion trends.</h2>
+            <div className='flex  flex-col md:flex-row gap-6'>
+              {
+                wantinspiration.map((item)=>{
+                    return <Card link={item.link} img={item.imgLink}/>
+                })
+              }
                     
             </div>
            
