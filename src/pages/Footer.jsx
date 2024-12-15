@@ -1,9 +1,9 @@
 import React from 'react'
-import JoinCard from '../components/Footer/JoinCard'
-import FooterMain from '../components/Footer/FooterMain'
+import JoinCard from '../components/JoinCard'
+import FooterMain from '../components/FooterMain'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import FooterBottom from '../components/Footer/FooterBottom';
+import FooterBottom from '../components/FooterBottom';
 
 function Footer() {
   return (
