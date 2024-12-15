@@ -6,8 +6,8 @@ import FeelLikeHome from '../components/FeelLikeHome'
 import ProductCategory from '../components/ProductCategory'
 import Productbanner from '../components/Productbanner'
 import WantInspiration from '../components/WantInspiration'
-import ProductContainer from '../components/product/productContainer'
-import ShopNew from '../components/product/ShopNew'
+import ProductContainer from '../components/ProductContainer'
+import ShopNew from '../components/ShopNew'
 import SaveShop from '../components/saveshop/SaveShop'
 
 function Home() {
